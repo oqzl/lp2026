@@ -19,6 +19,8 @@
 
 ## 使い方
 
+### ローカルで確認する場合
+
 1. リポジトリをクローン:
 ```bash
 git clone https://github.com/oqzl/lp2026.git
@@ -26,7 +28,25 @@ git clone https://github.com/oqzl/lp2026.git
 
 2. ブラウザで `index.html` を開く
 
-または、GitHub Pagesで公開することもできます。
+### GitHub Pagesで公開する場合
+
+このリポジトリはGitHub Pagesで自動的にデプロイされるように設定されています。
+
+#### 自動デプロイ
+
+- `main` ブランチにプッシュすると、GitHub Actionsが自動的にサイトをビルドしてGitHub Pagesにデプロイします
+- デプロイの進行状況は、リポジトリの「Actions」タブで確認できます
+
+#### 初回セットアップ（リポジトリ管理者向け）
+
+GitHub Pagesを有効にするには、以下の手順を実行してください：
+
+1. リポジトリの「Settings」タブを開く
+2. 左サイドバーの「Pages」をクリック
+3. 「Source」セクションで「GitHub Actions」を選択
+4. `main` ブランチにプッシュすると、自動的にデプロイが開始されます
+
+デプロイ後、サイトは `https://oqzl.github.io/lp2026/` でアクセスできるようになります。
 
 ## 技術スタック
 
